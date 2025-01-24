@@ -1,6 +1,6 @@
 .portfolio__block{
    max-width: 1920px;
-   height: 1670px;
+   min-height:  1670px;
    background-color: #f3f3f3;
    
 }
@@ -33,16 +33,13 @@
 
 .portfolio__foto{
    display:flex;
-   margin: auto auto;
-   max-width:1200px;
+   margin: 0 auto;
+   max-width:100%;
    height: 1120px;
    flex-wrap: wrap;
    justify-content: center;
    align-items:center;
-   
-   
-   
-   
+   padding: 0; 
   
 }
 .portfolio__square{
@@ -75,6 +72,22 @@
    box-shadow: 0 0 10px 1px ;
    transition: all .43s;
    
-   
-   
+}
+
+@media (max-width:1200px){
+   .portfolio__foto{
+      display:flex;
+      margin: 0 auto;
+      max-width:100%;
+      height: 2220px;
+      flex-wrap: wrap;
+      
+   }
+
+   .portfolio__a {
+      margin: 50px auto;
+      width: 185px;
+      height: 40px;
+      
+   }
 }
